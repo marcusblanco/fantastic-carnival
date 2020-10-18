@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE class [
+        <!ELEMENT class (student)*>
+        <!ELEMENT student (name|math|english|physics)*>
+        <!ATTLIST student
+                idno CDATA #REQUIRED>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT math (#PCDATA)>
+        <!ELEMENT english (#PCDATA)>
+        <!ELEMENT physics (#PCDATA)>
+        ]>
+<class>
+    <student idno="1">
+        <name>Malik George</name>
+        <math>5</math>
+        <english>3</english>
+        <physics>5</physics>
+    </student>
+    <student idno="2">
+        <name>Buddah Hulegun</name>
+        <math>3</math>
+        <english>4</english>
+        <physics>3</physics>
+    </student>
+    <student idno="3">
+        <name>Stefano Villiams</name>
+        <math>2</math>
+        <english>5</english>
+        <physics>5</physics>
+    </student>
+    <student idno="4">
+        <name>Martines Uolles</name>
+        <math>5</math>
+        <english>2</english>
+        <physics>2</physics>
+    </student>
+</class>
